@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.5.1-web/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Add Product</title>
+</head>
+<body>
+    <section>
+        <div class="container mx-auto">
+            <div class="md:flex flex-wrap justify-between items-center md:mx-10 mx-3">
+               <div class="flex justify-between items-center">
+                    <div>
+                        <img class="md:w-40 md:h-24 w-32 h-22" src="./picture/logo.png" alt="Logo">
+                    </div>
+
+
+                    <div class="md:hidden block" onclick="showMenu()">
+                        <div class="" id="navMenuButtonOn">
+                            <i class="fa-solid fa-bars pr-2"></i>
+                        </div>
+
+                        <div class="hidden" id="navMenuButtonOff">
+                            <i class="fa-solid fa-bars pr-2"></i>
+                        </div>
+
+                    </div>
+               </div>
+
+               
+                <div class="md:flex flex-wrap font-semibold hidden md:block ml-56 md:bg-white bg-gray-100 px-5 py-5 rounded md:text-base text-sm" id="navContent">
+                    <a class="hover:bg-purple-400 md:bg-white bg-gray-200 px-3 py-2 md:my-0 my-2 rounded active:bg-yellow-400" href="./add.html"> Add Product</a><br><br>
+                    <a class="hover:bg-purple-400 md:bg-white bg-gray-200 px-3 py-2 md:my-0 my-5 rounded active:bg-yellow-400" href="./view.html">View Product </a><br><br>
+                    <a class="hover:bg-purple-400 md:bg-white bg-gray-200 px-3 py-2 md:my-0 my-5 rounded active:bg-yellow-400" href=""> Update Product</a><br><br>
+                    <a class="hover:bg-purple-400 md:bg-white bg-gray-200 px-3 py-2 md:my-0 my-5 rounded active:bg-yellow-400" href="">Delate Product</a>
+                </div>
+              
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="text-center">
+            <div class="text-2xl font-bold mx-auto mt-5">Add Product</div>
+        </div>
+
+        <div class="flex justify-center md:my-14 my-10 mx-5 ">
+            <form class="w-[700px] bg-purple-200 py-5 px-7 rounded" action="">
+                <div>
+                    <label class="font-semibold" for="prodCode">Product Code:</label>
+                    <input type="text" name="prodCode" placeholder="ProductCode" class="my-2 border-2 border-gray-300 border-solid rounded w-full py-1 px-2">
+                </div>
+
+                <div class="py-3">
+                    <label class="font-semibold" for="prodImgage">Product Image:</label>
+                    <input type="file" name="prodImage" placeholder="Image" class="my-2 bg-white border-2 border-gray-300 border-solid rounded w-full py-1 px-2">
+                </div>
+
+                <div>
+                    <label class="font-semibold" for="prodName">Product Name:</label>
+                    <input type="text" name="prodName" placeholder="ProductName" class="my-2 border-2 border-gray-300 border-solid rounded w-full py-1 px-2">
+                </div>
+
+                <div class="py-3">
+                    <label class="font-semibold" for="prodPrice">Product Price:</label>
+                    <input type="text" name="prodPrice" placeholder="ProductPrice" class="my-2 border-2 border-gray-300 border-solid rounded w-full py-1 px-2">
+                </div>
+
+                
+            </form>
+        </div>
+    </section>
+    
+
+    <script src="./main.js"></script>
+</body>
+</html>
+
